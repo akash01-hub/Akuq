@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Question Portal</title>
+</head>
+<body>
+    <h1>Ask a Question</h1>
+    <form method="post">
+        <input type="text" name="question" placeholder="Type your question" required>
+        <button type="submit">Post</button>
+    </form>
+
+    <h2>All Questions</h2>
+    <ul>
+        {% for q in questions %}
+            <li>{{ q }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
